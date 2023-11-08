@@ -5,11 +5,17 @@
     */
 
     //Entrada
-
+    let num = Number(prompt("Qual numero deseja calcular o fatorial ?"))
 
     //Processamento
-
+    function fatoria() {
+        let fatorial = 0;
+        for (let i = num;  ; i--){
+            fatorial += num * i;
+        }
+        alert(fatorial)
+    }
 
     //Saída
-
+    fatoria()
 </script>

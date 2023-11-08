@@ -8,10 +8,21 @@
 
     //Entrada
 
-
+    let palavra = prompt("Qual a palavara que deseja saber as vogais?").toLowerCase()
     //Processamento
 
+    function vogal() {
+        let separado = Array.from(palavra)
+        let vogais = 0;
+        for (const item of separado) {
+            let letras = ["a" , "e" , "i" , "o" , "u"]
+            if (letras.includes(item)) {
+                vogais++
+            }
+        }
+        alert(`${vogais}`)
+    }
 
     //Saída
-
+    vogal()
 </script>

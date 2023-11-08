@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Área do Triângulo
@@ -6,11 +7,19 @@
     */
 
     //Entrada
-
+    let dados = {
+        base: Number(prompt("Qual a base paizao ?")) , 
+        altura: Number(prompt("Qual altura paizao"))
+    }
 
     //Processamento
-
+    function area(b , h) {
+        let area = (b * h) / 2;
+        return area ;
+    
+    }
 
     //Saída
-
+    let resultado = area(dados.base , dados.altura)
+    alert(`sua area é ${resultado}`)
 </script>
