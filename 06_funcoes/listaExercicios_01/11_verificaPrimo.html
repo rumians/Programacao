@@ -5,11 +5,23 @@
     */
 
     //Entrada
-
+    let numero = Number(prompt("Insira um numero!"));
 
     //Processamento
-
+    function verificarprimo(num) {
+        let divisores = 0;
+        for (let i = 1; i <= num; i++) {
+            if ( num % i == 0){
+            divisores++;
+            }
+        }
+        if (divisores == 2) {
+            alert("Ele é primo")
+        } else {
+            alert("Ele nao é primo")
+        }
+    }
 
     //Saída
-
+    verificarprimo(numero)
 </script>

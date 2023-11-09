@@ -6,11 +6,19 @@
     */
 
     //Entrada
-
-
+    let pergunta = prompt("Insira uma palavra ou frase").trim().toLowerCase().split('')
+    let letra = prompt("Qual letra deseja buscar ?").toLowerCase()
     //Processamento
-
+    function contar(a , b) {
+        let contador = 0;
+        for (let i = 0; i < a.length ; i++) {
+            if (a[i] == b) {
+                contador++;
+            }
+        }
+        alert(contador)
+    }
 
     //Saída
-
+    contar(pergunta , letra)
 </script>
